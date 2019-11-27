@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Home</title>
+{% endblock %}
+
+{% block body %}
+    <div class="jumbotron">
+        <div>    <h1> Welcome to home! </h1> </div>
+        <br>
+        <div>
+            <pre>
+                <button type="submit" class="btn btn-success" onclick="window.location.href = 'http://127.0.0.1:8000/accounts/login';">CheckIn</button>   <button type="submit" class="btn btn-success" onclick="window.location.href = 'http://127.0.0.1:8000/accounts/logout';">CheckOut</button>
+            </pre>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{%  block body %}
+    <div class="jumbotron">
+        <h1>Welcome</h1>
+
+        <p>
+            You can check out here!
+        </p>
+        <h2>CheckOut</h2>
+        <br>
+
+        <form action="/accounts/logout/" method="post">
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="name"><pre>Name : </pre></div>
+                <div>
+                    <div class="input-group">
+                        <input type="text" name="name">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="form-row">
+                <div ><pre>Email : </pre></div>
+                <div class="value">
+                    <div class="input-group">
+                        <input type="email" name="email">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="name"><pre>Phone : </pre></div>
+                <div class="value">
+                    <div class="input-group">
+                        <input type="number" name="phone">
+                    </div>
+                </div>
+            </div>
+            <br>
+{#            {% csrf_token %}#}
+{#            {{ form.as_p }}#}
+            <button type="submit" class="btn btn-success">CheckOut</button>
+{#            <button type="submit">Checkout</button>#}
+
+        </form>
+    </div>
+
+
+
+{% endblock %}
+
+
+
+
+
