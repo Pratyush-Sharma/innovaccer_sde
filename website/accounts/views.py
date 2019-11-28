@@ -25,7 +25,7 @@ def myform(request):
             subject="Checked In"
             message="Name- "+form_name+" \n "+"Email- "+email+" \n "
             message=message+"Phone -"+contact+" \n "+"CheckIn Time-"+t
-            recipient_list=['sharmatyson007@gmail.com']
+            recipient_list=['vs@xyz.com']
             send_mail(subject,message,'sharmatyson007@gmail.com',recipient_list)
             print(form_name)
             return HttpResponseRedirect('/accounts/')
