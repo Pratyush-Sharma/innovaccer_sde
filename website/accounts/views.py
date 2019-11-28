@@ -26,7 +26,7 @@ def myform(request):
             message="Name- "+form_name+" \n "+"Email- "+email+" \n "
             message=message+"Phone -"+contact+" \n "+"CheckIn Time-"+t
             recipient_list=['vs@xyz.com']
-            send_mail(subject,message,'sharmatyson007@gmail.com',recipient_list)
+            send_mail(subject,message,'vs@xyz.com',recipient_list)
             print(form_name)
             return HttpResponseRedirect('/accounts/')
 
@@ -55,7 +55,7 @@ def outform(request):
             message=message+"Phone -"+contact+" \n "+"CheckOut Time-"+t + "\n Host Name - Vishesh Singh"
             message=message + "\n Address visited - Company Main Office"
             recipient_list=[email]
-            send_mail(subject,message,'sharmatyson007@gmail.com',recipient_list)
+            send_mail(subject,message,'vs@xyz.com',recipient_list)
             print(form_name)
             return HttpResponseRedirect('/accounts/')
 
