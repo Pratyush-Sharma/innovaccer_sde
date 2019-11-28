@@ -125,6 +125,6 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'vs@xyz.com'
-EMAIL_HOST_PASSWORD = 'something'
+EMAIL_HOST_PASSWORD = 'anything'
 
 LOGIN_REDIRECT_URL = 'accounts/login/'
